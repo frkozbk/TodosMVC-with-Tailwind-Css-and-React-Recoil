@@ -1,7 +1,12 @@
 import React from 'react';
-import './tailwind.generated.css';
+import { RecoilRoot } from 'recoil';
+import TodoMVC from './views/TodoMVC';
 function App() {
-  return <div className="App">Hello</div>;
+  return (
+    <RecoilRoot>
+      <TodoMVC />
+    </RecoilRoot>
+  );
 }
 
 export default App;
